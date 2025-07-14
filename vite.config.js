@@ -8,11 +8,14 @@ export default defineConfig({
      build: {
     chunkSizeWarningLimit: 1000, // Increase limit
     rollupOptions: {
+      input: {
+        main: './index.html',
       output: {
         manualChunks(id) {
           if (id.includes('node_modules')) {
             return 'vendor'; // Split vendor chunks
           }
+        }
         }
       }
     }
