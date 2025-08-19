@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Home from "./Components/Pages/Home/Home";
 import { Routes, Route, useNavigate } from "react-router-dom";
-import Login from "./Components/pages/Login/Login";
+import Login from "./Components/pages/Login/Login.jsx"
 import Player from "./Components/pages/Player/Player";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "./Firebase";
